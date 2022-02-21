@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Light_Bulb_or_Idea_Flat_Icon_Vector.svg/473px-Light_Bulb_or_Idea_Flat_Icon_Vector.svg.png"    type="image/svg+xml" >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        
+        <div style="height: 2vh; width: 90vw"></div>
+        <div class="centered">
+            <div class="centered" >
+                <label class="switch">
+                    <span id="lightMasterSwitch"  class="slider"></span>
+                </label>
+                
+                <input class="lightslider" id="startSlider" onchange="colorslider(this)" type="range" min="0" max='50' value="0" id="myRange">
+                <input class="lightslider" id="endSlider"   onchange="colorslider(this)" type="range"  min="0" max='100' value="0" id="myRange">
+            </div>
+            <div style="padding:3vh">
+
+                <input type="number" id="startLight" style="height:7vh; font-size:12pt; text-align: center;vertical-align: middle; margin: 3vh;" min="0" max="100" value="1" onchange="">
+                <input type="number" id="endLight"   style="height:7vh; font-size:12pt; text-align: center;vertical-align: middle;margin: 3vh;" min="0" max="100" value="1" onchange="">
+            </div>
+            
+            <input type="button" style="margin-bottom: 3vh;" class="lightzone" isOn=true onclick="createSpecificSwitchRequest(this);">
+            <div>
+
+                <button id="onPreset" style="height:8vh;width:8vh; margin: 3vh; background-color: black;"
+                    onclick="document.getElementById('chosenColor').value='#000000'" >
+                </button>
+                <input  id="chosenColor" type="color" style="height:8vh;width:8vh; margin: 4vh;" name="head" value="#ffffff">
+                
+                <button  id="offPreset" style="height:8vh;width:8vh; margin: 3vh; background-color: white;"
+                    onclick="document.getElementById('chosenColor').value='#ffffff'">
+                </button>
+
+            </div>
+            
+        </div>
+         <script src="script.js" >  </script>
+    </body>
+</html>
