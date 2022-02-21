@@ -6,5 +6,6 @@ A ESP8266 is set to connect to a named wifi network based on SSID and password. 
 The ESP hosts the webpage files in its EEPROM (see "/data" folder), which it reads as a bitstream and sends to the requester.
 
 The user opens their device and goes to the website (in this case "http://esp8266"), where they can control the lights.
-![Website example](https://user-images.githubusercontent.com/35771181/154933652-58ea9dc7-206d-4ebe-97cb-a57521fb607e.png)
+![Website example](https://user-images.githubusercontent.com/35771181/154938757-79b21571-8329-4e16-8fd5-35351955dd6e.png)
+
 
