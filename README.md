@@ -1,7 +1,7 @@
 # Individually wifi adressable RGB LED strips
 This is a project i started to replace the normal lighting I have in my room. 
 A ESP8266 is set to connect to a named wifi network based on SSID and password. Once connected the router gives the ESP a dedicated static ip, that will also be used to redirect requests on the network if they match certain keywords.
-![Project component structure](https://user-images.githubusercontent.com/35771181/154945298-2cc1fb18-5868-42b4-981b-8bc8f7bad0a8.png)
+![Project component structure](https://user-images.githubusercontent.com/35771181/154945385-33feac73-09eb-4d1b-ada6-1de6b79f88e7.png)
 
 The ESP hosts the webpage files in its EEPROM (see "/data" folder), which it reads as a bitstream and sends to the requester.
 
