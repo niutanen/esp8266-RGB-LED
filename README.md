@@ -14,4 +14,10 @@ The site is optimised to resize with the width of the window, thus making the ex
 
 ## The ESP8266
 The ESP8266 is powered by a usb wall charger, and is out of reach for the most part. Thus having OTA updates significantly simplifies the development process. 
+The main external libraries that the esp uses are:
+ - FastLED : helps control the WS2812b RGB light strips
+ - LittleFS : helps deal with serving the webpage files from the EEPROM
+ - OTAESP : helps update the ESP8266 over wifi
+
+
 
